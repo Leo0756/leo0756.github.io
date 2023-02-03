@@ -1,73 +1,103 @@
-/* Selector Universal */
+/* Universal Selector */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
 }
 
 /* Container */
 #container {
     width: 100vw;
     height: 100vh;
-    margin: auto;
 }
 
-/* Header && Nav-Bar && Logo */
+/* Header */
 header {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    background-image: linear-gradient(130deg, rgb(69, 156, 255), rgb(152, 88, 255));
 }
 
-nav {
-    width: 80%;
-}
-
+/* Logo */
 #logo {
     width: 20%;
 }
 
-header nav ul {
+/* Nav-Bar */
+nav {
+    width: 80%;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav>ul {
+    list-style-type: none;
     overflow: hidden;
 }
 
-header nav ul li {
-    float: left;
+nav>ul>li {
+    float: right;
+    padding: 10px 1px;
 }
 
-header nav ul li a,
+nav>ul>li>a,
+li>div>a,
 #dropbtn {
     display: inline-block;
+    color: white;
     text-align: center;
-    padding: 14px 16px;
+    margin: 20px;
+    padding: 5px 15px;
+    font-size: 1.5em;
 }
 
-header nav ul li a:hover,
+li.item-menu>a:hover,
 #dropdown:hover #dropbtn {
-    background-color: red;
+    box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    border-bottom: solid 1px rgb(212, 199, 251);
+    border-left: solid 1px rgb(212, 199, 251);
+}
+
+li#dropdown {
+    display: inline-block;
 }
 
 #dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -10px 10px 16px 0px rgba(51, 37, 37, 0.6);
     z-index: 1;
+    background-image: linear-gradient(12deg, rgb(69, 156, 255), rgb(152, 88, 255));
 }
 
 #dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    padding: 15px 15px;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
-#dropdown-content a:hover {background-color: #f1f1f1;}
+#dropdown-content a:hover {
+    box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    border-bottom: solid 1px rgb(212, 199, 251);
+    border-left: solid 1px rgb(212, 199, 251);
+
+}
 
 #dropdown:hover #dropdown-content {
-  display: block;
+    display: block;
+}
+
+
+#contact-box a {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+#contact-box:hover a {
+    color: white;
+    box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(12deg, rgb(69, 156, 255), rgb(152, 88, 255));
 }
