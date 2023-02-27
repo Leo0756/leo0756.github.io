@@ -1,181 +1,234 @@
 /* Google - Font */
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 /* Universal Selector */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
 }
 
-/* Container */
-#container {
-    width: 100%;
-    height: 100vh;
-}
-
-/* Container - Nav-Bar - Footer --> Background */
-#container,
-#dropdown-content,
-#contact-box:hover>a,
-#footer-column3-social-networks a img:hover {
-    background-image: linear-gradient(45deg, rgb(67, 155, 255), rgb(160, 104, 251));
-    background-size: 400% 400%;
-}
-
-#footer-column3-social-networks a img:hover {
-    background-image: linear-gradient(45deg, rgb(67, 155, 255), rgb(160, 104, 251));
-    border-radius: 15px;
-    box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-/* Container --> Background - Animation */
-#container {
-    animation: cambiar 10s infinite;
-}
-
-@keyframes cambiar {
-    0% {
-        background-position: 0 50%;
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0 50%;
-    }
-}
-
-/* Header - Footer */
-header,
-footer {
-    width: 100%;
-    display: flex;
-}
-
-/* Logo */
-#logo {
-    width: 20%;
-}
-
-/* Nav-Bar */
-nav {
-    width: 80%;
-}
-
-nav>ul {
-    overflow: hidden;
-}
-
-nav>ul>li {
-    float: right;
-    padding: 0.5rem;
-}
-
-nav>ul>li.item-menu>a:hover {
-    box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-nav>ul>li>a,
-li>div>a {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    margin: 1rem;
-    padding: 0.7rem 1rem;
-    font-size: 1.5em;
-}
-
-#dropdown {
-    display: inline-block;
-}
-
-#dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    box-shadow: -10px 10px 16px 0px rgba(51, 37, 37, 0.6);
-    z-index: 1;
-}
-
-#dropdown-content a {
-    padding: 0.7rem 1rem;
-    display: block;
-    text-align: left;
-}
-
-#dropdown-content a:hover {
-    box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-#dropdown:hover #dropdown-content {
-    display: block;
-}
-
-#contact-box a {
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-}
-
-#contact-box:hover a {
-    color: white;
-    box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-/* Footer */
-footer {
-    justify-content: center;
+/* Color */
+header * {
+  color: white;
 }
 
 footer * {
-    color: white;
+  color: black;
 }
 
-footer>div {
-    width: 30%;
-    text-align: center;
-    padding: 3rem 0;
+/* Background */
+header,
+#dropdown-content,
+#contact-box a:hover {
+  background-image: linear-gradient(
+    120deg,
+    rgb(138, 180, 253),
+    rgb(157, 138, 252),
+    rgb(138, 180, 253),
+    rgb(157, 138, 252)
+  );
+  background-size: 400% 400%;
 }
 
-footer>div a {
-    margin: 20px;
+#contact-box a {
+  background-color: white;
 }
 
-footer>div>h3 {
-    font-size: 1.2em;
-    padding: 1rem;
+/* Background - Animation */
+header,
+#dropdown-content,
+#contact-box a:hover {
+  animation: background_animation 20s infinite;
 }
 
-footer>div>ul>li {
-    padding: 1rem 1rem;
+@keyframes background_animation {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
 }
 
-#footer-column1 a,
-#footer-column3 a {
-    padding: 10px;
-    margin: 5px;
+/* Size Of The Boxes, Elements & Selectors */
+#container,
+header,
+#page-content,
+footer,
+#logo > a,
+nav > ul {
+  width: 100%;
 }
 
-#footer-column1 a:hover,
-#footer-column3>ul>li>a:hover {
-    box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+nav {
+  width: 85%;
 }
 
-#footer-column2>p {
-    padding: 1rem;
+#logo {
+  width: 15%;
 }
 
-#footer-column3-social-networks a {
-    padding: 0.7rem;
-    margin: 0.2rem;
+header,
+#logo,
+#logo > a,
+nav,
+nav > ul,
+nav > ul > li {
+  height: 90px;
 }
 
-#footer-column3-social-networks {
-    padding-top: 1.5rem;
+#logo > a > img {
+  height: 70%;
+}
+
+#dropdown-content {
+  width: 300px;
+}
+
+footer {
+  height: 500px;
+}
+footer > div {
+  height: 370px;
+}
+
+#footer-edevaweb img {
+  height: 80px;
+}
+
+#footer-social-networks > div > a > img {
+  height: 20px;
+}
+
+footer > div {
+  height: 200px;
+  width: 15%;
+}
+
+#footer-edevaweb {
+  width: 40%;
+}
+
+#copyright {
+  width: 100%;
+}
+
+/* Header Elements CSS */
+header,
+nav > ul,
+nav > ul > li,
+#dropdown:hover #dropdown-content {
+  display: flex;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+nav > ul {
+  justify-content: right;
+  flex-wrap: wrap;
+}
+
+nav > ul > li {
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+nav a:hover {
+  box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+#dropdown {
+  position: relative;
+}
+
+#dropdown-content {
+  display: none;
+  position: absolute;
+  top: 90px;
+  left: -10px;
+  box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#dropdown:hover #dropdown-content {
+  flex-direction: column;
+  animation: background_animation 10s infinite;
+}
+
+#contact-box a {
+  color: black;
+  border-radius: 1rem;
+}
+
+#contact-box a:hover {
+  color: white;
+}
+
+#logo > a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 2rem;
+}
+
+#logo > a:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Elements CSS */
+footer * {
+  text-align: center;
+  margin: 0.7rem;
+  padding: 0.3rem;
+}
+
+#footer-social-networks div > a > img,
+#footer-social-networks div > a {
+  margin: 0.3rem;
+  padding: 1px;
+}
+
+footer,
+#footer-social-networks > div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+footer {
+  border-top: solid black 1px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  display: block;
+}
+
+footer a:hover {
+  box-shadow: -10px 10px 16px 0px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+#footer-social-networks div > a:hover {
+  border-radius: 5px;
 }
