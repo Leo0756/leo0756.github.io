@@ -1,7 +1,11 @@
-/* Google - Font */
+/* ----------------- */
+/* - Google - Font - */
+/* ----------------- */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-/* Universal Selector */
+/* ---------------------- */
+/* - Universal Selector - */
+/* ---------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +15,11 @@
   font-family: "Raleway", sans-serif;
 }
 
-/* Color */
-header * {
+/* --------- */
+/* - Color - */
+/* --------- */
+header *,
+#index-content-1 * {
   color: white;
 }
 
@@ -20,15 +27,19 @@ footer * {
   color: black;
 }
 
-/* Background */
+/* -------------- */
+/* - Background - */
+/* -------------- */
 header,
 #dropdown-content,
-#contact-box a:hover {
+#contact-box a:hover,
+#index-content-1,
+#index-content-1-item-1 a:hover {
   background-image: linear-gradient(
     120deg,
-    rgb(138, 180, 253),
-    rgb(157, 138, 252),
-    rgb(138, 180, 253),
+    rgb(99, 156, 255),
+    rgb(141, 118, 255),
+    rgb(115, 164, 250),
     rgb(157, 138, 252)
   );
   background-size: 400% 400%;
@@ -38,10 +49,14 @@ header,
   background-color: white;
 }
 
-/* Background - Animation */
+/* -------------------------- */
+/* - Background - Animation - */
+/* -------------------------- */
 header,
 #dropdown-content,
-#contact-box a:hover {
+#contact-box a:hover,
+#index-content-1,
+#index-content-1-item-1 a:hover {
   animation: background_animation 20s infinite;
 }
 
@@ -59,7 +74,9 @@ header,
   }
 }
 
-/* Size Of The Boxes, Elements & Selectors */
+/* ------------------------------------------- */
+/* - Size Of The Boxes, Elements & Selectors - */
+/* ------------------------------------------- */
 #container,
 header,
 #page-content,
@@ -122,7 +139,9 @@ footer > div {
   width: 100%;
 }
 
-/* Header Elements CSS */
+/* ----------------------- */
+/* - Header Elements CSS - */
+/* ----------------------- */
 header,
 nav > ul,
 nav > ul > li,
@@ -176,7 +195,7 @@ nav a:hover {
 
 #contact-box a {
   color: black;
-  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 #contact-box a:hover {
@@ -194,7 +213,9 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Footer Elements CSS */
+/* ----------------------- */
+/* - Footer Elements CSS - */
+/* ----------------------- */
 footer * {
   text-align: center;
   margin: 0.7rem;
@@ -231,4 +252,271 @@ footer a:hover {
 
 #footer-social-networks div > a:hover {
   border-radius: 5px;
+}
+
+/* -------------------------- */
+/* - Page - Content - Index - */
+/* -------------------------- */
+#page-content-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#page-content-index h2 {
+  font-size: xx-large;
+}
+
+/* ----------------------- */
+/* - Index - Content - 1 - */
+/* ----------------------- */
+#index-content-1 {
+  width: 100%;
+}
+
+#index-content-1-item-1,
+#index-content-1-item-2 {
+  width: 40%;
+}
+
+#index-content-1-item-3 {
+  width: 100%;
+}
+
+#index-content-1,
+#index-content-1-item-1,
+#index-content-1-item-2,
+#index-content-1-item-3 {
+  display: flex;
+  justify-content: center;
+}
+
+#index-content-1-item-1,
+#index-content-1-item-2,
+#index-content-1-item-3 {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#index-content-1 {
+  flex-wrap: wrap;
+}
+
+#index-content-1 h1 {
+  width: 100%;
+  margin: 3rem;
+  text-align: center;
+}
+
+#index-content-1-item-1 {
+  flex-direction: column;
+}
+
+#index-content-1-item-1 p {
+  text-align: justify;
+  font-size: 1.2em;
+  margin-bottom: 3rem;
+}
+
+#index-content-1-item-1 a {
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 8rem;
+  border-radius: 2rem;
+  background-color: white;
+  width: 65%;
+  color: black;
+  padding: 1rem;
+  font-size: 1.2em;
+}
+
+#index-content-1-item-1 a:hover {
+  color: white;
+}
+
+#index-content-1-item-2 img {
+  height: 45vh;
+}
+
+#index-content-1-item-3 {
+  align-items: center;
+  gap: 2rem;
+}
+
+#index-content-1-item-3 img {
+  height: 13vh;
+}
+
+/* ----------------------- */
+/* - Index - Content - 2 - */
+/* ----------------------- */
+#index-content-2 {
+  width: 1200px;
+  padding: 0.5rem;
+  margin: 4rem 1rem;
+}
+
+.index-content-2-item-1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.index-content-2-item-1 * {
+  margin: 0.25rem;
+  padding: 0.25rem;
+}
+
+.index-content-2-item-1 > h2,
+.index-content-2-item-1 > h4 {
+  width: 1000px;
+}
+
+.index-content-2-item-1 div h5,
+.index-content-2-item-1 div p {
+  width: 100%;
+  text-align: center;
+}
+
+.index-content-2-item {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 0.5rem;
+  color: white;
+}
+
+.index-content-2-item-color-1 {
+  background-color: rgb(74, 255, 216);
+  color: black;
+}
+
+.index-content-2-item-color-2 {
+  background-color: rgb(52, 99, 255);
+  color: white;
+}
+
+.index-content-2-item-color-3 {
+  background-color: rgb(255, 205, 56);
+  color: black;
+}
+
+.index-content-2-item-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.index-content-2-item-2-1 {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.index-content-2-item-2-1 * {
+  margin: 0.5rem;
+}
+
+#index-content-2-1-size-box-1 {
+  width: 580px;
+}
+
+#index-content-2-1-size-box-2 {
+  width: 420px;
+}
+
+#index-content-2-1-size-box-1 img {
+  height: 70px;
+  margin: 1rem;
+}
+
+#index-content-2-2-size-box-2 img {
+  height: 200px;
+  width: 300px;
+  border: solid 0.1px rgba(0, 0, 0, 0.12);
+  margin: 1rem;
+}
+
+.index-content-2-item-2-1 img {
+  height: 80px;
+}
+.index-content-2-item-2-2 {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.index-content-2-item-2-1 span {
+  font-weight: bold;
+}
+
+.index-content-2-item-2-2 img {
+  width: 250px;
+}
+
+.index-content-2-item-3 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.index-content-2-item-3 h2 {
+  text-align: center;
+}
+
+.index-content-2-item-3-1 {
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.index-content-2-item-3-1 div {
+  margin: 1rem;
+}
+
+.index-content-2-item-3-1 div img {
+  height: 120px;
+  border-radius: 1rem;
+}
+
+.index-content-2-item-3-1 div h5 {
+  text-align: center;
+}
+
+#img-web-a-medida {
+  margin: 1.5rem;
+}
+#img-web-a-medida img {
+  height: 300px;
+  width: auto;
+  border: solid 1px rgba(0, 0, 0, 0.326);
+}
+
+#index-content-2-item-4 {
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#index-content-2-item-4 * {
+  margin: 1rem;
+}
+
+#index-content-2-item-4 img {
+  width: 900px;
 }
