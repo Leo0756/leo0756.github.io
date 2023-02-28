@@ -1,11 +1,9 @@
-/* ----------------- */
 /* - Google - Font - */
-/* ----------------- */
+/* ---> Importo una fuente de Google para poder aplicárselos en los textos que contenga la página web. */
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-/* ---------------------- */
 /* - Universal Selector - */
-/* ---------------------- */
+/* ---> Aplico un CSS por defecto para todas las etiquetas. */
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +13,8 @@
   font-family: "Raleway", sans-serif;
 }
 
-/* --------- */
 /* - Color - */
-/* --------- */
+/* ---> Aplico la propiedad Color a los elementos contenidos en los siguientes capas (esto principalmente orientado para darle un color a los textos de dichas capas). */
 header *,
 #index-content-1 * {
   color: white;
@@ -27,14 +24,13 @@ footer * {
   color: black;
 }
 
-/* -------------- */
 /* - Background - */
-/* -------------- */
+/* ---> Aplico la propiedad Background en los diferentes elementos tratando de agrupar la mayoria de estos. */
 header,
 #dropdown-content,
 #contact-box a:hover,
 #index-content-1,
-#index-content-1-item-1 a:hover, 
+#index-content-1-item-1 a:hover,
 #sub-container-main-head {
   background-image: linear-gradient(
     120deg,
@@ -50,14 +46,14 @@ header,
   background-color: white;
 }
 
-/* -------------------------- */
 /* - Background - Animation - */
-/* -------------------------- */
+/* ---> Haciendo el uso de @keyframes aplico un fondo animado (animation: ) a los distintos elementos tratando de agrupar la mayoría de estos. */
 header,
 #dropdown-content,
 #contact-box a:hover,
 #index-content-1,
-#index-content-1-item-1 a:hover, #sub-container-main-head {
+#index-content-1-item-1 a:hover,
+#sub-container-main-head {
   animation: background_animation 20s infinite;
 }
 
@@ -75,9 +71,8 @@ header,
   }
 }
 
-/* ------------------------------------------- */
 /* - Size Of The Boxes, Elements & Selectors - */
-/* ------------------------------------------- */
+/* ---> Aplico la anchura y altura de la mayoria de los elementos. */
 #container,
 header,
 #page-content,
@@ -140,9 +135,106 @@ footer > div {
   width: 100%;
 }
 
-/* ----------------------- */
+#index-content-1,
+#index-content-1 h1 {
+  width: 100%;
+}
+
+#index-content-1-item-1,
+#index-content-1-item-2 {
+  width: 40%;
+}
+#index-content-1-item-3 {
+  width: 100%;
+}
+
+#index-content-1-item-1 a {
+  width: 65%;
+}
+
+#index-content-1-item-2 img {
+  height: 45vh;
+}
+
+#index-content-1-item-3 img {
+  height: 13vh;
+}
+
+#index-content-2 {
+  width: 1200px;
+}
+
+.index-content-2-item-1 > h2,
+.index-content-2-item-1 > h4 {
+  width: 1000px;
+}
+
+.index-content-2-item-1 div h5,
+.index-content-2-item-1 div p {
+  width: 100%;
+}
+
+.index-content-2-item-1-subitem {
+  width: 300px;
+}
+
+.index-content-2-item-2 {
+  width: 100%;
+}
+
+.index-content-2-item-2-1 {
+  width: 700px;
+}
+
+.index-content-2-item-2-1 img {
+  height: 80px;
+}
+
+.index-content-2-item-2-2 {
+  width: 350px;
+}
+
+.index-content-2-item-2-2 img {
+  width: 250px;
+}
+
+.index-content-2-item-3-1 {
+  width: 100%;
+}
+
+.index-content-2-item-3-1 div img {
+  height: 120px;
+}
+
+#index-content-2-1-size-box-1 {
+  width: 580px;
+}
+
+#index-content-2-1-size-box-1 img {
+  height: 70px;
+}
+
+#index-content-2-1-size-box-2 {
+  width: 420px;
+}
+
+#index-content-2-2-size-box-2 img {
+  height: 200px;
+  width: 300px;
+}
+
+#img-web-a-medida img {
+  height: 300px;
+}
+#index-content-2-item-4 {
+  width: 100%;
+}
+#index-content-2-item-4 img {
+  width: 900px;
+}
+
 /* - Header Elements CSS - */
-/* ----------------------- */
+/* ---> Aquí aplico el CSS a todos los elementos contenidos en la etiqueta Header. */
 header,
 nav > ul,
 nav > ul > li,
@@ -176,6 +268,15 @@ nav a:hover {
   transform: scale(1.05);
 }
 
+#contact-box a {
+  color: black;
+  border-radius: 2rem;
+}
+
+#contact-box a:hover {
+  color: white;
+}
+
 #dropdown {
   position: relative;
 }
@@ -194,15 +295,6 @@ nav a:hover {
   animation: background_animation 10s infinite;
 }
 
-#contact-box a {
-  color: black;
-  border-radius: 2rem;
-}
-
-#contact-box a:hover {
-  color: white;
-}
-
 #logo > a {
   display: flex;
   align-items: center;
@@ -210,36 +302,17 @@ nav a:hover {
   padding-left: 2rem;
 }
 
-#logo > a:hover {
-  transform: scale(1.05);
+/* - Footer Elements CSS - */
+/* ---> Aquí aplico el CSS a todos los elementos contenidos en la etiqueta Footer. */
+footer {
+  border-top: solid black 1px;
+  flex-wrap: wrap;
 }
 
-/* ----------------------- */
-/* - Footer Elements CSS - */
-/* ----------------------- */
 footer * {
   text-align: center;
   margin: 0.7rem;
   padding: 0.3rem;
-}
-
-#footer-social-networks div > a > img,
-#footer-social-networks div > a {
-  margin: 0.3rem;
-  padding: 1px;
-}
-
-footer,
-#footer-social-networks > div {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  align-items: center;
-}
-
-footer {
-  border-top: solid black 1px;
-  flex-wrap: wrap;
 }
 
 footer a {
@@ -251,37 +324,44 @@ footer a:hover {
   transform: scale(1.05);
 }
 
+footer,
+#footer-social-networks > div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+#footer-social-networks div > a > img,
+#footer-social-networks div > a {
+  margin: 0.3rem;
+  padding: 1px;
+}
+
 #footer-social-networks div > a:hover {
   border-radius: 5px;
 }
 
-/* -------------------------- */
 /* - Page - Content - Index - */
-/* -------------------------- */
+/* ---> Aplico el CSS sobre esta capa y en las etiquetas H2 que esta contenga. */
 #page-content-index {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  place-items: center;
 }
 
 #page-content-index h2 {
   font-size: xx-large;
 }
 
-/* ----------------------- */
 /* - Index - Content - 1 - */
-/* ----------------------- */
+/* --->  Aplico CSS sobre los elementos contenidos en la capa con identificador: index-content-1.*/
 #index-content-1 {
-  width: 100%;
+  flex-wrap: wrap;
 }
 
-#index-content-1-item-1,
-#index-content-1-item-2 {
-  width: 40%;
-}
-
-#index-content-1-item-3 {
-  width: 100%;
+#index-content-1 h1 {
+  margin: 3rem;
+  text-align: center;
 }
 
 #index-content-1,
@@ -297,16 +377,6 @@ footer a:hover {
 #index-content-1-item-3 {
   margin: 1rem;
   padding: 1rem;
-}
-
-#index-content-1 {
-  flex-wrap: wrap;
-}
-
-#index-content-1 h1 {
-  width: 100%;
-  margin: 3rem;
-  text-align: center;
 }
 
 #index-content-1-item-1 {
@@ -325,7 +395,6 @@ footer a:hover {
   margin-bottom: 8rem;
   border-radius: 2rem;
   background-color: white;
-  width: 65%;
   color: black;
   padding: 1rem;
   font-size: 1.2em;
@@ -335,25 +404,19 @@ footer a:hover {
   color: white;
 }
 
-#index-content-1-item-2 img {
-  height: 45vh;
-}
-
 #index-content-1-item-3 {
   align-items: center;
   gap: 2rem;
 }
 
 #index-content-1-item-3 img {
-  height: 13vh;
   margin: 2rem;
 }
 
-/* ----------------------- */
 /* - Index - Content - 2 - */
-/* ----------------------- */
+/* --->  Aplico CSS sobre los elementos contenidos en la capa con identificador: index-content-2.*/
+
 #index-content-2 {
-  width: 1200px;
   padding: 0.5rem;
   margin: 4rem 1rem;
 }
@@ -369,19 +432,12 @@ footer a:hover {
   padding: 0.25rem;
 }
 
-.index-content-2-item-1 > h2,
-.index-content-2-item-1 > h4 {
-  width: 1000px;
-}
-
 .index-content-2-item-1 div h5,
 .index-content-2-item-1 div p {
-  width: 100%;
   text-align: center;
 }
 
-.index-content-2-item {
-  width: 300px;
+.index-content-2-item-1-subitem {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -413,11 +469,9 @@ footer a:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5rem;
-  width: 100%;
 }
 
 .index-content-2-item-2-1 {
-  width: 700px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -427,42 +481,14 @@ footer a:hover {
   margin: 0.5rem;
 }
 
-#index-content-2-1-size-box-1 {
-  width: 580px;
-}
-
-#index-content-2-1-size-box-2 {
-  width: 420px;
-}
-
-#index-content-2-1-size-box-1 img {
-  height: 70px;
-  margin: 1rem;
-}
-
-#index-content-2-2-size-box-2 img {
-  height: 200px;
-  width: 300px;
-  border: solid 0.1px rgba(0, 0, 0, 0.12);
-  margin: 1rem;
-}
-
-.index-content-2-item-2-1 img {
-  height: 80px;
-}
-.index-content-2-item-2-2 {
-  width: 350px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .index-content-2-item-2-1 span {
   font-weight: bold;
 }
 
-.index-content-2-item-2-2 img {
-  width: 250px;
+.index-content-2-item-2-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .index-content-2-item-3 {
@@ -476,7 +502,6 @@ footer a:hover {
 
 .index-content-2-item-3-1 {
   margin-top: 2rem;
-  width: 100%;
   display: grid;
   place-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -488,7 +513,6 @@ footer a:hover {
 }
 
 .index-content-2-item-3-1 div img {
-  height: 120px;
   border-radius: 1rem;
 }
 
@@ -496,18 +520,26 @@ footer a:hover {
   text-align: center;
 }
 
+#index-content-2-1-size-box-1 img {
+  margin: 1rem;
+}
+
+#index-content-2-2-size-box-2 img {
+  border: solid 0.1px rgba(0, 0, 0, 0.12);
+  margin: 1rem;
+}
+
 #img-web-a-medida {
   margin: 1.5rem;
 }
+
 #img-web-a-medida img {
-  height: 300px;
   width: auto;
   border: solid 1px rgba(0, 0, 0, 0.326);
 }
 
 #index-content-2-item-4 {
   margin-top: 5rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -517,8 +549,4 @@ footer a:hover {
 
 #index-content-2-item-4 * {
   margin: 1rem;
-}
-
-#index-content-2-item-4 img {
-  width: 900px;
 }

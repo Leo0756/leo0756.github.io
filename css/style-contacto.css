@@ -1,6 +1,5 @@
-/* ------------------------------------------ */
-/* - Form-Contact , Sub-Container-Main-Head - */
-/* ------------------------------------------ */
+/* - Sub-Container-Main-Head & Sub-Container-Main  - */
+/* ---> Aplico CSS sobre todos los elementos contenidos en la capas con indentificadores: sub-container-main-head y sub-container-main. */
 #page-content-contacto,
 #sub-container-main-head {
   width: 100%;
@@ -24,13 +23,22 @@
 }
 
 #form-garantia-contacto * {
-    margin: 0.5rem 2rem;
+  margin: 0.5rem 2rem;
 }
 
 #form-contact {
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+#form-contact div {
+  width: 600px;
+  display: grid;
+  place-items: center;
+}
+#form-contact div img {
+  width: 450px;
 }
 
 #form-contact-subcontainer {
@@ -52,6 +60,12 @@
 }
 #form-contact-subcontainer form * {
   margin: 0.5rem;
+}
+
+#form-contact-subcontainer form div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 #form-contact-subcontainer form input[type="text"],
@@ -84,30 +98,14 @@
   border: 1px solid rgb(255, 255, 255);
 }
 
-#form-contact-subcontainer form div {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#form-contact div {
-  width: 600px;
-  display: grid;
-  place-items: center;
-}
-#form-contact div img {
-  width: 450px;
-}
-
-/* ------------------------------ */
 /* - Sub-Container-Main-Content - */
-/* ------------------------------ */
+/* --->  ---> Aplico CSS sobre todos los elementos contenidos en la capas con indentificadores: sub-container-main-content. */
 #sub-container-main-content {
   width: 100%;
   display: grid;
   justify-content: space-around;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 #sub-container-main-content * {
@@ -117,8 +115,4 @@
 
 #sub-container-main-content img {
   width: 100%;
-}
-
-.negrita-letra {
-    font-weight: bold;
 }
