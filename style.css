@@ -34,7 +34,8 @@ header,
 #dropdown-content,
 #contact-box a:hover,
 #index-content-1,
-#index-content-1-item-1 a:hover {
+#index-content-1-item-1 a:hover, 
+#sub-container-main-head {
   background-image: linear-gradient(
     120deg,
     rgb(99, 156, 255),
@@ -56,7 +57,7 @@ header,
 #dropdown-content,
 #contact-box a:hover,
 #index-content-1,
-#index-content-1-item-1 a:hover {
+#index-content-1-item-1 a:hover, #sub-container-main-head {
   animation: background_animation 20s infinite;
 }
 
