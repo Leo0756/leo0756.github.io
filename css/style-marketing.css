@@ -1,0 +1,42 @@
+/* - Page-Content-Marketing & Page-Content-Marketing-Item-1 - */
+/* ---> Aplico CSS sobre todos los elementos contenidos en la capas con indentificadores: page-content-marketing y page-content-marketing-item-1 */
+#page-content-marketing {
+  width: 1200px;
+  display: grid;
+  place-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#page-content-marketing > h1,
+#page-content-marketing h3,
+#page-content-marketing p {
+  margin: 1rem;
+  text-align: center;
+}
+
+#page-content-marketing > h3 {
+  color: royalblue;
+}
+
+#page-content-marketing-item-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+#page-content-marketing-item-1 > div {
+  display: grid;
+  place-items: center;
+}
+
+#page-content-marketing-item-1 > div * {
+  margin: 1rem;
+  text-align: center;
+}
+
+#page-content-marketing-item-1 > div > img {
+  height: 150px;
+}

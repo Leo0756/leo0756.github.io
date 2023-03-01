@@ -82,6 +82,11 @@ nav > ul {
   width: 100%;
 }
 
+#container {
+  display: grid;
+  place-items: center;
+}
+
 nav {
   width: 85%;
 }
