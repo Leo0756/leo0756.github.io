@@ -4,8 +4,10 @@
 
 ### Importante ⚠
 
-- Probado en navegador Brave con la resolución 1920x1080.
-- En este proyecto contiene varios apartados en cuanto a contenido, por lo cual es fácil perderse al tratar de leer el código.
+- Probado en el navegador Brave con la resolución 1920x1080.
+
+### Advertencia ⚠
+- Este proyecto contiene varios apartados en cuanto a contenido, por lo cual es fácil perderse al tratar de leer el código.
 
 ---
 
