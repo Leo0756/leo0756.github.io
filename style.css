@@ -32,7 +32,8 @@ header,
 #index-content-1,
 #index-content-1-item-1 a:hover,
 #sub-container-main-head,
-#empresa-enlace-contacto {
+#empresa-enlace-contacto,
+#page-content-empresa-exception-head {
   background-image: linear-gradient(
     120deg,
     rgb(99, 156, 255),
@@ -55,7 +56,8 @@ header,
 #index-content-1,
 #index-content-1-item-1 a:hover,
 #sub-container-main-head,
-#empresa-enlace-contacto {
+#empresa-enlace-contacto,
+#page-content-empresa-exception-head {
   animation: background_animation 20s infinite;
 }
 

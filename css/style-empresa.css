@@ -1,5 +1,30 @@
 /* - Page-Content-Empresa - */
 /* ---> Aplico CSS sobre todos los elementos contenidos en la capas con indentificadores: page-content-empresa */
+#page-content-empresa-exception-head {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#page-content-empresa-exception-head h1 {
+  color: white;
+  text-align: center;
+  margin: 3rem;
+  border-bottom: 1px solid white;
+}
+
+#page-content-empresa-exception-head p {
+  color: white;
+  text-align: center;
+  margin: 1rem;
+}
+
+#page-content-empresa-exception-head a  {
+  color: white;
+  font-size: xx-large;
+  margin: 1rem;
+}
+
 #page-content-empresa {
   width: 1200px;
   display: grid;
@@ -20,10 +45,6 @@
 #page-content-empresa > h2,
 #page-content-empresa > p {
   text-align: center;
-}
-
-#page-content-empresa > h1 {
-  border-bottom: royalblue 1px solid;
 }
 
 #page-content-empresa > h2 {
