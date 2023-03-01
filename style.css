@@ -33,7 +33,9 @@ header,
 #sub-container-main-head,
 #empresa-enlace-contacto,
 #page-content-empresa-exception-head,
-#page-content-app-head, #page-content-web-head  {
+#page-content-app-head,
+#page-content-web-head,
+#page-content-software-head {
   background-image: linear-gradient(
     120deg,
     rgb(99, 156, 255),
@@ -58,7 +60,9 @@ header,
 #sub-container-main-head,
 #empresa-enlace-contacto,
 #page-content-empresa-exception-head,
-#page-content-app-head, #page-content-web-head  {
+#page-content-app-head,
+#page-content-web-head,
+#page-content-software-head {
   animation: background_animation 20s infinite;
 }
 
