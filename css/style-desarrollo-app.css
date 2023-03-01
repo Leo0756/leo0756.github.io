@@ -1,0 +1,108 @@
+/* - Page-Content-App, Page-Content-App-Head, Page-Content-App-Main - */
+/* ---> Aplico CSS sobre todos los elementos contenidos en la capas con indentificadores: page-content-app, page-content-app-head y page-content-app-main. */
+#page-content-app,
+#page-content-app-head {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#page-content-app {
+  margin-bottom: 4rem;
+}
+
+#page-content-app span {
+  font-weight: bold;
+}
+
+#page-content-app ul {
+  padding: 1rem;
+}
+
+#page-content-app-head h1,
+#page-content-app-head p {
+  margin-top: 4rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#page-content-app-head p {
+  margin-top: 2rem;
+}
+
+#page-content-app-main {
+  margin-top: 4rem;
+  width: 1200px;
+  display: grid;
+  place-items: center;
+}
+
+#page-content-app-main * {
+  margin: 1rem;
+}
+
+#page-content-app-main > p {
+  text-align: center;
+}
+
+#page-content-app-main > h2 {
+  text-align: center;
+  color: royalblue;
+}
+
+#page-content-app-main-item-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#img-desarrollo-app {
+  display: grid;
+  place-items: center;
+}
+
+#img-desarrollo-app img {
+  height: 400px;
+}
+
+#page-content-app-main-item-2 div img {
+  height: 80px;
+}
+
+#page-content-app-main-item-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#page-content-app-main-item-2 div {
+  display: grid;
+  place-items: center;
+}
+
+#page-content-app-main-item-2 * {
+  text-align: center;
+}
+
+#page-content-app-main-item-3 {
+  display: grid;
+  place-items: center;
+}
+
+#page-content-app-main-item-3 * {
+  text-align: center;
+}
+
+#page-content-app-main-item-3 img {
+  height: 150px;
+}
+
+#page-content-app-main-item-3 a {
+  padding: 1rem;
+  border-radius: 2rem;
+  background-image: linear-gradient(
+    120deg,
+    rgb(153, 188, 248),
+    rgb(188, 174, 255)
+  );
+  color: white;
+}
