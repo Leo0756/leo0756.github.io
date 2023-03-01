@@ -1,0 +1,107 @@
+#page-content-web,
+#page-content-web-head {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+#page-content-web {
+  margin-bottom: 4rem;
+}
+
+#page-content-web span {
+  font-weight: bold;
+}
+
+#page-content-web ul {
+  padding: 1rem;
+}
+
+#page-content-web-head h1,
+#page-content-web-head p {
+  margin-top: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#page-content-web-head p {
+  margin-top: 2rem;
+}
+
+#page-content-web-head a {
+  font-size: xx-large;
+  color: white;
+  margin: 1rem;
+}
+
+#page-content-web-main {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  width: 1200px;
+  display: grid;
+  place-items: center;
+}
+
+#page-content-web-main h1,
+#page-content-web-main h2 {
+  margin: 1rem;
+}
+
+#page-content-web-main h2 {
+  color: royalblue;
+}
+
+#page-content-web-main-item-1,
+#page-content-web-main-item-1 div {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#page-content-web-main-item-1 div {
+  grid-template-columns: 1fr;
+  margin: 1rem;
+}
+
+#page-content-web-main-item-1 div * {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+#page-content-web-main-item-1 img {
+  height: 80px;
+}
+
+.page-content-web-main-item-2 {
+  display: grid;
+  place-items: center;
+  margin: 1rem;
+}
+
+.page-content-web-main-item-2 div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.page-content-web-main-item-2 div img {
+  height: 300px;
+}
+
+.page-content-web-main-item-2 > h1,
+.page-content-web-main-item-2 > p {
+  text-align: center;
+  margin: 1rem;
+}
+
+.page-content-web-main-item-2 a {
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  background-image: linear-gradient(
+    120deg,
+    rgb(153, 188, 248),
+    rgb(188, 174, 255)
+  );
+  color: white;
+}
