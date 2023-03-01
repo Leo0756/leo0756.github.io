@@ -21,7 +21,7 @@
 
 #page-content-app-head h1,
 #page-content-app-head p {
-  margin-top: 4rem;
+  margin-top: 2rem;
   color: white;
   margin-bottom: 2rem;
   text-align: center;
@@ -29,6 +29,12 @@
 
 #page-content-app-head p {
   margin-top: 2rem;
+}
+
+#page-content-app-head a {
+  font-size: xx-large;
+  color: white;
+  margin: 1rem;
 }
 
 #page-content-app-main {
