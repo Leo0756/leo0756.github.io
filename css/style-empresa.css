@@ -1,0 +1,78 @@
+/* - Page-Content-Empresa - */
+/* ---> Aplico CSS sobre todos los elementos contenidos en la capas con indentificadores: page-content-empresa */
+#page-content-empresa {
+  width: 1200px;
+  display: grid;
+  place-items: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+#page-content-empresa * {
+  margin-top: 1rem;
+}
+
+#page-content-empresa span {
+  font-weight: bold;
+}
+
+#page-content-empresa > h1,
+#page-content-empresa > h2,
+#page-content-empresa > p {
+  text-align: center;
+}
+
+#page-content-empresa > h1 {
+  border-bottom: royalblue 1px solid;
+}
+
+#page-content-empresa > h2 {
+  margin: 1.25rem;
+}
+
+#page-content-empresa > h1 {
+  color: rgb(80, 124, 255);
+}
+
+#page-content-empresa > img {
+  height: 200px;
+  margin-top: 7rem;
+}
+
+#page-content-empresa > iframe {
+  border-radius: 2rem;
+}
+
+#page-content-empresa-subcontainer-1 > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-empresa {
+  height: 300px;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.img-empresa-centrado {
+  display: grid;
+  place-items: center;
+}
+
+#page-content-empresa-subcontainer-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#page-content-empresa-subcontainer-2 img {
+  height: 350px;
+  margin: auto;
+  border-radius: 2rem;
+}
+
+#empresa-enlace-contacto {
+  border-radius: 2rem;
+  margin: 1.75rem;
+  padding: 1rem;
+  color: white;
+}
