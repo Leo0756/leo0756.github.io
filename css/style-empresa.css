@@ -18,7 +18,7 @@
   margin: 1.5rem;
 }
 
-#page-content-empresa-exception-head a  {
+#page-content-empresa-exception-head a {
   color: white;
   font-size: xx-large;
   margin: 1rem;
@@ -59,6 +59,11 @@
   margin-top: 7rem;
 }
 
+#img-empresa-centrado-1 img {
+  height: 370px;
+  border-radius: 2rem;
+}
+
 #page-content-empresa > iframe {
   border-radius: 2rem;
 }
@@ -69,7 +74,7 @@
 }
 
 .img-empresa {
-  height: 300px;
+  height: 350px;
   border-radius: 2rem;
   margin: 1rem;
 }
