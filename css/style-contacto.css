@@ -7,6 +7,10 @@
   place-items: center;
 }
 
+#page-content-contacto span {
+  font-weight: bold;
+}
+
 #sub-container-main-head * {
   color: white;
   text-align: center;
@@ -115,4 +119,25 @@
 
 #sub-container-main-content img {
   width: 100%;
+}
+
+#sub-container-main-content > h2 {
+  text-align: center;
+}
+
+#enlaces-contacto-id {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+}
+
+#enlaces-contacto-id > a {
+  padding: 1rem;
+  background-image: linear-gradient(
+    120deg,
+    rgb(153, 188, 248),
+    rgb(188, 174, 255)
+  );
+  border-radius: 2rem;
+  color: white;
 }
